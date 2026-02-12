@@ -469,6 +469,31 @@
             transform: scale(1.1);
             background-color: #20b857;
         }
+/* Floating Google Maps Button */
+.float-map {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 110px; /* Fica acima do WhatsApp */
+    right: 40px;
+    background-color: #4285F4; /* Azul Google Maps */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 26px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.float-map:hover {
+    transform: scale(1.1);
+    background-color: #3367D6;
+}
+
     </style>
 </head>
 <body>
@@ -620,6 +645,14 @@
     <a href="https://wa.me/5584994178491" class="float-wa" target="_blank" aria-label="Falar no WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <!-- Botão Flutuante Localização -->
+     <a href="https://maps.app.goo.gl/wdECVQPEDwDfiMug6" 
+   class="float-map" 
+   target="_blank" 
+   aria-label="Ver localização no Google Maps">
+    <i class="fas fa-location-dot"></i>
+</a>
 
     <!-- Scripts -->
     <script>
